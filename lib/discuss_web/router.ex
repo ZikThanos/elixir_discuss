@@ -26,7 +26,7 @@ defmodule DiscussWeb.Router do
     resources "/", TopicController
   end
 
-  scope "/auth", Discuss do
+  scope "/auth", DiscussWeb do
     pipe_through :browser
     get "/signout", AuthController, :signout
     get "/:provider", AuthController, :request

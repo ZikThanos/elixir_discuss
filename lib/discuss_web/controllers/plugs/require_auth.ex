@@ -1,4 +1,4 @@
-defmodule DiscussWeb.Plugs.RequireAuth do
+defmodule Discuss.Plugs.RequireAuth do
   import Plug.Conn
   import Phoenix.Controller
 
